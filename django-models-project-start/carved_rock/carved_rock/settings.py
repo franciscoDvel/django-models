@@ -26,6 +26,7 @@ SECRET_KEY = 'iz6dt@oz+_dr(87u!qf0+fc&nepjjo7kqda-48782=im06o#bn'
 DEBUG = True
 
 ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['pacodvel.pythonanywhere.com']
 
 
 # Application definition
