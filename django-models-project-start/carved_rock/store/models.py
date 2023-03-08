@@ -11,3 +11,8 @@ class Product(models.Model):
 class ProductImage(models.Model):
     image = models.ImageField()
     product = models.ForeignKey('Product', on_delete=models.CASCADE)
+
+class Category(models.Model):
+    name = models.CharField(max_length = 100)
+    products = models.ManyToManyField('Product')
+
