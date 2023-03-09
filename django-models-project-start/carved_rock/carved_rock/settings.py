@@ -25,7 +25,6 @@ SECRET_KEY = 'iz6dt@oz+_dr(87u!qf0+fc&nepjjo7kqda-48782=im06o#bn'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['pacodvel.pythonanywhere.com']
 
 
@@ -39,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'debug_toolbar',
+    "crispy_forms",
     'store',
 ]
 
@@ -139,3 +139,5 @@ LOGGING = {
     "root": {"handlers": ["console"]},
 }
 
+# Crispy
+CRISPY_TEMPLATE_PACK = "bootstrap3"

@@ -12,3 +12,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('__debug__/', include(debug_toolbar.urls)), # Debug toolbar
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+
+# The part after the + allows serving uploaded images
+# Don't do this in production! See https://docs.djangoproject.com/en/3.1/howto/static-files/#serving-files-uploaded-by-a-user-during-development
